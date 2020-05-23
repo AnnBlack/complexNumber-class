@@ -46,14 +46,14 @@ public class CTest
     public void inverseCompex()
     {
         String result = c3.inverse().toString();
-        assertEquals("(4.0, 1.0j)",result);
+        assertEquals("(0.06, -0.24j)",result);
     }
     
     @Test
     public void inverseAndMultiplyCompex()
     {
         String result = c4.inverse().multiply(c3).toString();
-        assertEquals("(-19.0, 9.0j)",result);
+        assertEquals("(0.35, 0.73j)",result);
     }
 
     /**

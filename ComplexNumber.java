@@ -45,7 +45,8 @@ public final class ComplexNumber
     
     public ComplexNumber inverse()
     {
-        return new ComplexNumber(getImagPart(), getRealPart());
+        double denominator = getRealPart() * getRealPart() + getImagPart() * getImagPart();
+        return new ComplexNumber(getRealPart()/denominator, - getImagPart()/denominator);
     }
     
     public String toString()
